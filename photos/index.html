@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photographer's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Photographer's Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#booking">Book a Session</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="photo-grid">
+      <!-- Photos will be dynamically added here -->
+    </div>
+  </section>
+
+  <section id="booking">
+    <h2>Book a Session</h2>
+    <form id="bookingForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="date">Preferred Date:</label>
+      <input type="date" id="date" name="date" required>
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <section id="feedback">
+    <h2>Feedback</h2>
+    <form id="feedbackForm">
+      <label for="feedbackText">Your Feedback:</label>
+      <textarea id="feedbackText" name="feedbackText" required></textarea>
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Connect with us on social media:</p>
+    <div class="social-media">
+      <a href="#" id="share-facebook">Facebook</a>
+      <a href="#" id="share-twitter">Twitter</a>
+      <a href="#" id="share-instagram">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
